@@ -19,7 +19,7 @@ describe 'Static pages' do
 
     it "should habe the right links on the layout" do
       click_link "About"
-      expect(page).have_title(full_title('About Us'))
+      expect(page).to have_title(full_title('About Us'))
       click_link "Help"
       expect(page).to have_title(full_title('Help'))
       click_link "Contact"
